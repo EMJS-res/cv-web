@@ -101,4 +101,4 @@ p { color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem; }
     border: 1px solid var(--border-color);
 }
 
-@media (max-width: 768px) { body { padding: 40px 15px; } header h1 { font-size: 2rem; } section { padding: 25px; } }
+@media (max-width: 768px) { body { padding: 40px 15px; } header h1 { font-size: 2rem; } section { padding: 25px; } .typewriter-container {min-height: 60px; }}

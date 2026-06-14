@@ -88,4 +88,17 @@ p { color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem; }
 .reveal.active { transform: translateY(0); }
 @keyframes blink { 50% { opacity: 0; } }
 
+/* ESTILOS DEL MAPA */
+.map-modal-content {
+    max-width: 600px; /* Un poco más ancho para que el mapa se vea bien */
+}
+.map-container {
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
 @media (max-width: 768px) { body { padding: 40px 15px; } header h1 { font-size: 2rem; } section { padding: 25px; } }

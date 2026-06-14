@@ -1,27 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. LÓGICA DE LA VENTANA EMERGENTE (MODAL)
+    // 1. LÓGICA DE LAS VENTANAS EMERGENTES (MODALES)
     const modal = document.getElementById("contactModal");
     const btnOpenModal = document.getElementById("openModalBtn");
     const btnCloseModal = document.getElementById("closeModal");
 
-    // Abrir el modal al dar clic al correo
+    const mapModal = document.getElementById("mapModal");
+    const btnOpenMap = document.getElementById("openMapBtn");
+    const btnCloseMap = document.getElementById("closeMapModal");
+
+    // Modal de Contacto
     btnOpenModal.addEventListener("click", (e) => {
         e.preventDefault(); 
         modal.style.display = "flex";
     });
-
-    // Cerrar el modal con la tachita
     btnCloseModal.addEventListener("click", () => {
         modal.style.display = "none";
     });
 
-    // Cerrar el modal al dar clic fuera del cuadro principal
+    // Modal de Mapa
+    btnOpenMap.addEventListener("click", (e) => {
+        e.preventDefault();
+        mapModal.style.display = "flex";
+    });
+    btnCloseMap.addEventListener("click", () => {
+        mapModal.style.display = "none";
+    });
+
+    // Cerrar los modales al dar clic fuera del cuadro principal
     window.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.style.display = "none";
         }
+        if (e.target === mapModal) {
+            mapModal.style.display = "none";
+        }
     });
-
+    
     // 2. MÁQUINA DE ESCRIBIR
     const words = ["Ingeniero en Sistemas Computacionales", "Especialista en Ciencia de Datos", "Desarrollador Full-Stack", "Administrador de Sistemas Linux", "Especialista en Diagnóstico de Hardware"];
     let wordIndex = 0, charIndex = 0, isDeleting = false;

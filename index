@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emiliano Jiménez Solano | CV Desarrollador</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="theme-toggle" id="themeBtn" title="Cambiar tema">
+        <i class='bx bx-sun'></i>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <i class='bx bx-envelope'></i> Enviar Mensaje
+            </div>
+            <form id="contactForm" action="https://formsubmit.co/hpe308resio@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                
+                <div class="form-group">
+                    <label for="name">Nombre / Empresa</label>
+                    <input type="text" id="name" name="name" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Me interesa tu perfil para..." required></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class='bx bx-send'></i> Enviar a Emiliano</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="reveal">
+            <div class="profile-title">
+                <h1>Emiliano Jiménez Solano</h1>
+                <div class="typewriter-container">
+                    <span class="typewriter" id="typewriterText"></span>
+                </div>
+            </div>
+            <div class="contact-grid">
+                <a href="#" id="openModalBtn" class="contact-item"><i class='bx bx-envelope'></i> hpe308resio@gmail.com</a>
+                
+                <a href="https://wa.me/527353717130?text=Hola%20Emiliano,%20estoy%20viendo%20tu%20CV%20web%20y%20me%20gustaría%20contactarte." target="_blank" class="contact-item"><i class='bx bxl-whatsapp'></i> 735 371 7130</a>
+                
+                <span class="contact-item"><i class='bx bx-map'></i> Cuautla, Morelos</span>
+            </div>
+        </header>
+
+        <section class="reveal">
+            <h2><i class='bx bx-user-voice'></i> Perfil Profesional</h2>
+            <p>Estudiante de Ingeniería en Sistemas Computacionales con especialidad en <strong>Inteligencia de Negocios y Ciencia de Datos</strong>. Con una formación técnica previa en programación (CBTIS 194), combino el desarrollo de software y el análisis de datos con un fuerte dominio técnico en redes de computadoras y arquitectura de hardware. Apasionado por los entornos Linux, la automatización de procesos y la creación de soluciones tecnológicas dinámicas y eficientes.</p>
+        </section>
+
+        <section class="reveal">
+            <h2><i class='bx bx-code-block'></i> Proyectos y Portafolio</h2>
+            <div class="cards-grid">
+                <div class="card project-card">
+                    <h3>Consultorio Odontológico</h3>
+                    <p>Landing page interactiva y moderna optimizada para la conversión y presentación de servicios odontológicos profesionales.</p>
+                    <a href="https://consultorio-odontologico-j5fz.vercel.app/" target="_blank" class="project-link">Visitar Sitio <i class='bx bx-link-external'></i></a>
+                </div>
+                <div class="card project-card">
+                    <h3>Abarrotes y Cerveza LUNA</h3>
+                    <p>Desarrollo web comercial adaptado para un negocio local, mejorando su presencia digital y accesibilidad.</p>
+                    <a href="https://tukan08.github.io/Abarrotera_Luna/" target="_blank" class="project-link">Visitar Sitio <i class='bx bx-link-external'></i></a>
+                </div>
+                <div class="card project-card">
+                    <h3>Portafolio ICO Actividades</h3>
+                    <p>Plataforma web centralizada para el control, almacenamiento y visualización de prácticas de desarrollo y algoritmos.</p>
+                    <a href="https://tukan08.github.io/ICOActividades/index.html" target="_blank" class="project-link">Visitar Sitio <i class='bx bx-link-external'></i></a>
+                </div>
+                <div class="card project-card">
+                    <h3>Script de Automatización</h3>
+                    <p>Bot en Python enfocado en la automatización de flujos de trabajo en red: refresco automático multitestaña y análisis de pixeles por color para alertas en tiempo real.</p>
+                    <span class="tech-tag">Python</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2><i class='bx bx-graduation'></i> Educación</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Ingeniería en Sistemas Computacionales</h3>
+                        <span class="timeline-date">Graduación Esperada: 2027</span>
+                        <p>Tecnológico Nacional de México (TecNM) - Campus Cuautla</p>
+                        <p class="specialty">Especialidad: Inteligencia de Negocios y Ciencia de Datos</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Técnico en Programación</h3>
+                        <span class="timeline-date">Egresado</span>
+                        <p>CBTIS 194</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2><i class='bx bx-wrench'></i> Experiencia Técnica y Proyectos Especiales</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3><i class='bx bx-chip'></i> Soporte de Hardware Integral</h3>
+                    <p>Diagnóstico, micro-soldadura, mantenimiento preventivo y reparación avanzada a nivel hardware de smartphones, computadoras de escritorio y laptops de diversas arquitecturas.</p>
+                </div>
+                <div class="card">
+                    <h3><i class='bx bx-rocket'></i> PinDemia — Emprendimiento</h3>
+                    <p>Fundación y desarrollo de una marca independiente de pines metálicos coleccionables de cultura geek y anime. Gestión integral de identidad corporativa, logística y e-commerce.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reveal">
+            <h2><i class='bx bx-slider'></i> Habilidades e Infraestructura</h2>
+            <div class="skills-container">
+                <span class="skill-badge">HTML5</span>
+                <span class="skill-badge">CSS3</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">C++</span>
+                <span class="skill-badge">PHP</span>
+                <span class="skill-badge">R</span>
+                <span class="skill-badge">Julia</span>
+                <span class="skill-badge">MPASM (Ensamblador)</span>
+                <span class="skill-badge special">Linux (Debian / Mint)</span>
+                <span class="skill-badge special">Auditoría de Redes (Nmap / Aircrack-ng)</span>
+                <span class="skill-badge special">Kali Linux</span>
+                <span class="skill-badge">Bases de Datos</span>
+                <span class="skill-badge">Diagnóstico de Hardware</span>
+            </div>
+        </section>
+
+        <div class="two-column reveal">
+            <section class="sub-section">
+                <h2><i class='bx bx-award'></i> Certificaciones</h2>
+                <ul class="custom-list">
+                    <li><i class='bx bx-check-shield'></i> Diplomado en Reparación de Computadoras</li>
+                    <li><i class='bx bx-check-shield'></i> Técnico en Electrónica</li>
+                    <li><i class='bx bx-check-shield'></i> Certificación Finder</li>
+                    <li><i class='bx bx-check-shield'></i> Diploma en Locución Profesional</li>
+                </ul>
+            </section>
+            <section class="sub-section">
+                <h2><i class='bx bx-globe' ></i> Idiomas</h2>
+                <div class="language-card">
+                    <h3>Inglés Técnico</h3>
+                    <div class="lang-bar-container"><div class="lang-bar" style="width: 85%;"></div></div>
+                    <span>Nivel Avanzado 1 (Fluidez en lectura de documentación y desarrollo)</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
